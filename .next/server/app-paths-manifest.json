@@ -1,6 +1,0 @@
-{
-  "/tugas/page": "app/tugas/page.js",
-  "/dashboard/page": "app/dashboard/page.js",
-  "/auth/login/page": "app/auth/login/page.js",
-  "/kalender/page": "app/kalender/page.js"
-}
