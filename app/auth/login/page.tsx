@@ -1,8 +1,5 @@
 "use client";
 
-export const dynamic = "force-dynamic";
-
-import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { login } from "@/lib/actions/auth";
 import Link from "next/link";
@@ -22,12 +19,6 @@ export default function LoginPage() {
 
   const [showPass, setShowPass] =
     useState(false);
-
-  const searchParams = useSearchParams();
-
-  const redirectTo =
-    searchParams.get("redirectTo") ||
-    "/dashboard";
 
   async function handleSubmit(
     e: React.FormEvent<HTMLFormElement>
@@ -105,13 +96,6 @@ export default function LoginPage() {
             onSubmit={handleSubmit}
             className="space-y-5"
           >
-            {/* URL AS STATE */}
-            <input
-              type="hidden"
-              name="redirectTo"
-              value={redirectTo}
-            />
-
             {/* EMAIL */}
             <div>
               <label className="block text-sm font-semibold text-gray-700 mb-2">
