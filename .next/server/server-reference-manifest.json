@@ -1,0 +1,82 @@
+{
+  "node": {
+    "3cfdf0a0d9b1eee1b5ff58fda391cd1ecdd0acdd": {
+      "workers": {
+        "app/dashboard/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Ctugas.ts%22%2C%5B%22simpanTugas%22%2C%22hapusTugas%22%2C%22getTugasByUser%22%2C%22toggleSelesai%22%5D%5D%5D&__client_imported__=!",
+        "app/tugas/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Ctugas.ts%22%2C%5B%22simpanTugas%22%2C%22hapusTugas%22%2C%22getTugasByUser%22%2C%22toggleSelesai%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/dashboard/page": "rsc",
+        "app/tugas/page": "rsc"
+      }
+    },
+    "526baf31adbd616a41c34b252c9a8e6e7d9209d1": {
+      "workers": {
+        "app/dashboard/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Ctugas.ts%22%2C%5B%22simpanTugas%22%2C%22hapusTugas%22%2C%22getTugasByUser%22%2C%22toggleSelesai%22%5D%5D%5D&__client_imported__=!",
+        "app/tugas/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Ctugas.ts%22%2C%5B%22simpanTugas%22%2C%22hapusTugas%22%2C%22getTugasByUser%22%2C%22toggleSelesai%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/dashboard/page": "rsc",
+        "app/tugas/page": "rsc"
+      }
+    },
+    "d6f69d06ab82124a75b48d2bb827a74df55c9de7": {
+      "workers": {
+        "app/dashboard/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Ctugas.ts%22%2C%5B%22simpanTugas%22%2C%22hapusTugas%22%2C%22getTugasByUser%22%2C%22toggleSelesai%22%5D%5D%5D&__client_imported__=!",
+        "app/tugas/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Ctugas.ts%22%2C%5B%22simpanTugas%22%2C%22hapusTugas%22%2C%22getTugasByUser%22%2C%22toggleSelesai%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/dashboard/page": "rsc",
+        "app/tugas/page": "rsc"
+      }
+    },
+    "d8b416cf8591f95be42c942038ac73f5ea219440": {
+      "workers": {
+        "app/dashboard/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Ctugas.ts%22%2C%5B%22simpanTugas%22%2C%22hapusTugas%22%2C%22getTugasByUser%22%2C%22toggleSelesai%22%5D%5D%5D&__client_imported__=!",
+        "app/tugas/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Ctugas.ts%22%2C%5B%22simpanTugas%22%2C%22hapusTugas%22%2C%22getTugasByUser%22%2C%22toggleSelesai%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/dashboard/page": "rsc",
+        "app/tugas/page": "rsc"
+      }
+    },
+    "29505c6cb13c292121ce95f8963b3cfa227e8d20": {
+      "workers": {
+        "app/dashboard/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%22logout%22%2C%22register%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/auth/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%22logout%22%2C%22register%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/tugas/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%22logout%22%2C%22register%22%2C%22login%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/dashboard/page": "action-browser",
+        "app/auth/login/page": "action-browser",
+        "app/tugas/page": "action-browser"
+      }
+    },
+    "bb925ae4aa59eac7eb3eef7767fcd54b9689af2c": {
+      "workers": {
+        "app/dashboard/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%22logout%22%2C%22register%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/auth/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%22logout%22%2C%22register%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/tugas/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%22logout%22%2C%22register%22%2C%22login%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/dashboard/page": "action-browser",
+        "app/auth/login/page": "action-browser",
+        "app/tugas/page": "action-browser"
+      }
+    },
+    "ca834b9a534022da65b467cb0fb15071164d2672": {
+      "workers": {
+        "app/dashboard/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%22logout%22%2C%22register%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/auth/login/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%22logout%22%2C%22register%22%2C%22login%22%5D%5D%5D&__client_imported__=true!",
+        "app/tugas/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5CThinkPad%5C%5CDocuments%5C%5Ctest_website%5C%5Clib%5C%5Cactions%5C%5Cauth.ts%22%2C%5B%22logout%22%2C%22register%22%2C%22login%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/dashboard/page": "action-browser",
+        "app/auth/login/page": "action-browser",
+        "app/tugas/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "+QLPGCOk8mdGPaYEf3I5VEsWX1SkrCKXsCLhu8HieE4="
+}
