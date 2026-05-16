@@ -26,7 +26,14 @@ import {
 import Toast from "./Toast";
 import clsx from "clsx";
 
-const prioritasConfig = {
+const prioritasConfig: Record<
+  string,
+  {
+    label: string;
+    color: string;
+    dot: string;
+  }
+> = {
   rendah: {
     label: "Rendah",
     color:

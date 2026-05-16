@@ -13,12 +13,12 @@ export async function middleware(request: NextRequest) {
           return request.cookies.get(name)?.value;
         },
 
-        set(name: string, value: string, options: any) {
-          request.cookies.set({
-            name,
-            value,
-            ...options,
-          });
+        set(name: string, value: string, options: Record<string, any>) {
+          const response = NextResponse.next({
+  request: {
+    headers: request.headers,
+  },
+});
 
           response.cookies.set({
             name,
@@ -27,7 +27,7 @@ export async function middleware(request: NextRequest) {
           });
         },
 
-        remove(name: string, options: any) {
+        remove(name: string, options: Record<string, any>) {
           request.cookies.set({
             name,
             value: "",
@@ -57,7 +57,14 @@ export async function middleware(request: NextRequest) {
   );
 
   if (isProtected && !user) {
-    return NextResponse.redirect(new URL("/auth/login", request.url));
+    const loginUrl = new URL("/auth/login", request.url);
+
+      loginUrl.searchParams.set(
+        "redirectTo",
+          pathname
+        );
+
+      return NextResponse.redirect(loginUrl);
   }
 
   return response;

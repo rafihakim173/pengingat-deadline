@@ -6,7 +6,7 @@ import { Prioritas } from "../types";
 import { Plus, Loader2 } from "lucide-react";
 import Toast from "./Toast";
 import clsx from "clsx";
-import { useRouter } from "next/navigation";
+
 
 const prioritasOptions: {
   value: Prioritas;
@@ -35,7 +35,7 @@ const prioritasOptions: {
 ];
 
 export default function TambahTugasForm() {
-  const router = useRouter();
+  ;
   const [loading, setLoading] = useState(false);
 
   const [prioritas, setPrioritas] =
@@ -65,7 +65,7 @@ export default function TambahTugasForm() {
       deadline: formData.get("deadline") as string,
       prioritas,
     });
-    console.log("RESULT DARI SERVER:", result);
+    
 
     setLoading(false);
 

@@ -3,7 +3,13 @@ import Link from "next/link";
 import { getTugasByUser } from "@/lib/actions/tugas";
 
 export default async function Dashboard() {
-  const tugas = await getTugasByUser();
+  let tugas = [];
+
+  try {
+    tugas = await getTugasByUser();
+  } catch (error) {
+    console.error(error);
+  }
 
   return (
     <div className="flex">
@@ -27,7 +33,7 @@ export default async function Dashboard() {
               Belum ada tugas
             </div>
           ) : (
-            tugas.map((item: any) => (
+            tugas.map((item) => (
               <div
                 key={item.id}
                 className="p-4 bg-white shadow rounded"
