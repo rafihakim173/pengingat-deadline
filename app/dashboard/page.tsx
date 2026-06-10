@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import Sidebar from "@/components/Sidebar";
 import Link from "next/link";
 import { getTugasByUser } from "@/lib/actions/tugas";

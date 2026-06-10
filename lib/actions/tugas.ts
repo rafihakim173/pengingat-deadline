@@ -45,10 +45,12 @@ export async function simpanTugas(data: TugasFormData) {
     };
   }
 
-  // REFRESH CACHE
-  revalidatePath("/dashboard");
-  revalidatePath("/tugas");
-  revalidatePath("/kalender");
+  // REFRESH CACHE - Parallel execution
+  await Promise.all([
+    revalidatePath("/dashboard"),
+    revalidatePath("/tugas"),
+    revalidatePath("/kalender"),
+  ]);
 
   return {
     success: true,
@@ -85,9 +87,12 @@ export async function toggleSelesai(
     };
   }
 
-  revalidatePath("/dashboard");
-  revalidatePath("/tugas");
-  revalidatePath("/kalender");
+  // REFRESH CACHE - Parallel execution
+  await Promise.all([
+    revalidatePath("/dashboard"),
+    revalidatePath("/tugas"),
+    revalidatePath("/kalender"),
+  ]);
 
   return {
     success: true,
@@ -119,9 +124,12 @@ export async function hapusTugas(id: string) {
     };
   }
 
-  revalidatePath("/dashboard");
-  revalidatePath("/tugas");
-  revalidatePath("/kalender");
+  // REFRESH CACHE - Parallel execution
+  await Promise.all([
+    revalidatePath("/dashboard"),
+    revalidatePath("/tugas"),
+    revalidatePath("/kalender"),
+  ]);
 
   return {
     success: true,

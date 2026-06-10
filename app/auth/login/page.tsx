@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { login } from "@/lib/actions/auth";
 import Link from "next/link";
 import {
@@ -11,6 +12,7 @@ import {
 } from "lucide-react";
 
 export default function LoginPage() {
+  const router = useRouter();
   const [loading, setLoading] =
     useState(false);
 
@@ -54,7 +56,10 @@ export default function LoginPage() {
     }
 
     // SUCCESS
-    // Redirect handled by server action
+    if (result?.success) {
+      router.push("/dashboard");
+      return;
+    }
   }
 
   return (

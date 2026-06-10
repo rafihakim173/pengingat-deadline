@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { simpanTugas } from "../lib/actions/tugas";
-import { Prioritas } from "../types";
+import { useRouter } from "next/navigation";
+import { simpanTugas } from "@/lib/actions/tugas";
+import { Prioritas } from "@/types";
 import { Plus, Loader2 } from "lucide-react";
 import Toast from "./Toast";
 import clsx from "clsx";
@@ -35,7 +36,7 @@ const prioritasOptions: {
 ];
 
 export default function TambahTugasForm() {
-  ;
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
 
   const [prioritas, setPrioritas] =
@@ -98,11 +99,14 @@ export default function TambahTugasForm() {
       message: "✅ Tugas berhasil disimpan!",
       type: "success",
     });
-      
 
     form.reset();
-
     setPrioritas("sedang");
+
+    // REDIRECT KE DASHBOARD SETELAH 1.5 DETIK
+    setTimeout(() => {
+      router.push("/dashboard");
+    }, 1500);
   }
 
   // MIN DATE = TODAY

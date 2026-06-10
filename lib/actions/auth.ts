@@ -39,11 +39,9 @@ export async function login(formData: FormData) {
     };
   }
 
-  const redirectTo =
-    (formData.get("redirectTo") as string) ||
-    "/dashboard";
-
-  redirect(redirectTo);
+  return {
+    success: true,
+  };
 }
 
 export async function register(
