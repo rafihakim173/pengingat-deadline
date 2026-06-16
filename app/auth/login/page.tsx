@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { login } from "@/lib/actions/auth";
+import { createClient } from "@/lib/supabase/client";
 import Link from "next/link";
 import {
   Eye,
@@ -30,36 +30,32 @@ export default function LoginPage() {
     setLoading(true);
     setError("");
 
-    const formData = new FormData(
-      e.currentTarget
-    );
+    const formData = new FormData(e.currentTarget);
 
-    const result = await login(formData);
+    const email = formData.get("email") as string | null;
+    const password = formData.get("password") as string | null;
 
-    // ZOD VALIDATION ERROR
-    if (result?.error) {
-      const firstError =
-        result.error.email?.[0] ||
-        result.error.password?.[0] ||
-        "Form tidak valid";
-
-      setError(firstError);
+    if (!email || !password) {
+      setError("Email dan password harus diisi");
       setLoading(false);
       return;
     }
 
-    // SERVER ERROR
-    if (result?.serverError) {
-      setError(result.serverError);
+    const supabase = createClient();
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+
+    if (error) {
+      setError("Email atau password salah");
       setLoading(false);
       return;
     }
 
-    // SUCCESS
-    if (result?.success) {
-      router.push("/dashboard");
-      return;
-    }
+    setLoading(false);
+    router.push("/dashboard");
+    return;
   }
 
   return (

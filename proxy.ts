@@ -1,7 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const response = NextResponse.next();
 
   const supabase = createServerClient(
@@ -14,30 +14,13 @@ export async function middleware(request: NextRequest) {
         },
 
         set(name: string, value: string, options: Record<string, any>) {
-          const response = NextResponse.next({
-  request: {
-    headers: request.headers,
-  },
-});
-
-          response.cookies.set({
-            name,
-            value,
-            ...options,
-          });
+          response.cookies.set(name, value, options);
         },
 
         remove(name: string, options: Record<string, any>) {
-          request.cookies.set({
-            name,
-            value: "",
+          response.cookies.set(name, "", {
             ...options,
-          });
-
-          response.cookies.set({
-            name,
-            value: "",
-            ...options,
+            maxAge: 0,
           });
         },
       },
@@ -59,12 +42,9 @@ export async function middleware(request: NextRequest) {
   if (isProtected && !user) {
     const loginUrl = new URL("/auth/login", request.url);
 
-      loginUrl.searchParams.set(
-        "redirectTo",
-          pathname
-        );
+    loginUrl.searchParams.set("redirectTo", pathname);
 
-      return NextResponse.redirect(loginUrl);
+    return NextResponse.redirect(loginUrl);
   }
 
   return response;
